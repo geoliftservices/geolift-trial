@@ -176,3 +176,22 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
 });
+
+// SHOW BUTTON ON SCROLL
+window.addEventListener("scroll", function(){
+const btn = document.querySelector(".scroll-top");
+
+if(window.scrollY > 300){
+btn.style.display = "block";
+}else{
+btn.style.display = "none";
+}
+});
+
+// SCROLL FUNCTION
+function scrollToTop(){
+window.scrollTo({
+top:0,
+behavior:"smooth"
+});
+}
