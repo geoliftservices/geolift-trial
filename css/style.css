@@ -252,7 +252,16 @@ nav a:hover{ color:#6366f1; }
 .view-more:hover{ text-decoration: underline; } /* Fixed broken CSS cutoff here */
 
 /* Footer Items */
-.footer-bottom{ border-top:1px solid rgba(0,0,0,0.08); margin-top:50px; padding:18px 0; display:flex; justify-content:center; align-items:center; gap:40px; font-size:13
+.footer-bottom{
+  border-top:1px solid rgba(0,0,0,0.08);
+  margin-top:50px;
+  padding:18px 0;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:40px;
+  font-size:13px;
+}
 
 .float-whatsapp{
 position:fixed;
