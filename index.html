@@ -1,77 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeoLift | Business Website Development & Google Business Profile Optimization</title>
+    
+    <meta name="description" content="GeoLift provides professional business website development and Google Business Profile optimization services.">
+    <link rel="icon" href="https://www.geolift.co.in/images/Geolift-Favicon-removebg-preview.webp">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>GeoLift</title>
-
-<link rel="stylesheet" href="/css/style.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
-
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KJ5CK17W49"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-KJ5CK17W49');
+    </script>
 </head>
-
 <body>
 
-<div id="header"></div>
+    <div class="top-bar">
+        <div class="top-bar-inner">
+            <div class="top-bar-left">📍 Serving Kolkata & India</div>
+            <div class="top-bar-right">
+                <span class="hide-mobile"><i class="fa-regular fa-envelope"></i> contact.geolift@gmail.com</span>
+                <span class="phone"><i class="fa-solid fa-phone"></i><a href="tel:+919477469499">+91 94774 69499</a></span>
+                <div class="top-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
 
-<!-- ===== COPY ALL YOUR SECTIONS BELOW (ONLY HTML, NO STYLE TAGS) ===== -->
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <img src="https://www.geolift.co.in/images/geolift-logo3-removebg-preview.webp" alt="GeoLift Logo">
+            </div>
+            <nav id="menu">
+                <a href="/">Home</a>
+                <div class="dropdown">
+                    <a href="#services" class="dropbtn">Services <span class="arrow">▾</span></a>
+                    <div class="dropdown-content">
+                        <a href="/services/gbp-setup-optimization/">GBP Setup & Optimization</a>
+                        <a href="/services/advanced-google-maps-ranking/">Google Maps Ranking</a>
+                        <a href="/services/custom-business-website-development/">Website Development</a>
+                    </div>
+                </div>
+                <a href="#about">About</a>
+                <a href="#plans">Plans</a>
+                <a href="https://wa.me/919477469499" class="cta">Chat on WhatsApp</a>
+            </nav>
+            <div class="menu-toggle" id="toggle">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </header>
 
-<!-- HERO -->
-<section class="hero">
-<!-- PASTE HERO HTML FROM YOUR FILE -->
-</section>
+    <div class="menu-overlay" id="overlay"></div>
 
-<!-- ABOUT -->
-<section class="about-section" id="about">
-<!-- PASTE ABOUT HTML -->
-</section>
+    <section class="hero">
+        <div class="hero-glow"></div>
+        <div class="hero-wrapper">
+            <div class="hero-content">
+                <div class="location">📍 Helping Businesses Grow Across India</div>
+                <h1>Build, Optimize, and Grow Your Business Online</h1>
+                <p>Professional business websites and Google Business Profile optimization designed to improve local visibility.</p>
+                <div class="hero-buttons">
+                    <a href="#services" class="btn-primary">Explore Services</a>
+                    <a href="#plans" class="btn-secondary">See Plans</a>
+                </div>
+            </div>
+            <div class="hero-form">
+                <h3>Free Profile Audit</h3>
+                <form onsubmit="sendAudit(event)">
+                    <input type="text" id="h_name" placeholder="Your Name" required>
+                    <input type="tel" id="h_phone" placeholder="Phone / WhatsApp" required>
+                    <button type="submit">Request Audit</button>
+                </form>
+            </div>
+        </div>
+    </section>
 
-<!-- SERVICES -->
-<section id="services" class="services">
-<!-- PASTE SERVICES -->
-</section>
+    <section class="about-section" id="about">
+        <div class="about-container">
+            <span class="about-badge">About Us</span>
+            <h2 class="about-title">Helping Businesses Build <span class="about-highlight">Strong Local Visibility</span></h2>
+            <div class="about-features">
+                <div class="about-feature"><h3>Profile Setup</h3><p>Professional GBP setup for trust.</p></div>
+                <div class="about-feature"><h3>Visibility</h3><p>Improving local search signals.</p></div>
+                <div class="about-feature"><h3>Growth</h3><p>Attracting more enquiries.</p></div>
+            </div>
+            <a class="about-cta" onclick="toggleAbout()">Read More</a>
+            <div class="about-full" id="aboutFull">
+                <div class="about-card">
+                    <h3>Our Journey</h3>
+                    <p>Started in 2021 to help businesses fix visibility issues.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!-- PRICING -->
-<section id="plans" class="glp-section">
-<!-- PASTE PRICING -->
-</section>
-
-<!-- WHY -->
-<section class="why-section">
-<!-- PASTE WHY -->
-</section>
-
-<!-- FAQ -->
-<section class="faq-section">
-<!-- PASTE FAQ -->
-</section>
-
-<!-- PROCESS -->
-<section class="process-section">
-<!-- PASTE -->
-</section>
-
-<!-- TESTIMONIAL -->
-<section class="testimonial-section">
-<!-- PASTE -->
-</section>
-
-<!-- CTA -->
-<section class="cta-section">
-<!-- PASTE -->
-</section>
-
-<!-- CONTACT -->
-<section class="contact-section">
-<!-- PASTE -->
-</section>
-
-<div id="footer"></div>
-
-<script src="/js/include.js"></script>
-<script src="/js/main.js"></script>
-
+    <script src="script.js"></script>
 </body>
 </html>
