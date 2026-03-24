@@ -1,3 +1,5 @@
+alert("JS Connected");
+
 const menu = document.getElementById("menu");
 const toggle = document.getElementById("toggle");
 const overlay = document.getElementById("overlay");
@@ -132,22 +134,30 @@ if (counters.length > 0 || yearCounters.length > 0) {
 }
 
 
-document.getElementById("auditForm").addEventListener("submit", function(e){
-  e.preventDefault();
+document.addEventListener("DOMContentLoaded", function(){
 
-  let name = document.getElementById("h_name").value;
-  let phone = document.getElementById("h_phone").value;
-  let business = document.getElementById("h_business").value;
-  let link = document.getElementById("h_link").value;
+  const form = document.getElementById("auditForm");
 
-  let message = `New Audit Request:
+  if(form){
+    form.addEventListener("submit", function(e){
+      e.preventDefault();
+
+      let name = document.getElementById("h_name").value;
+      let phone = document.getElementById("h_phone").value;
+      let business = document.getElementById("h_business").value;
+      let link = document.getElementById("h_link").value;
+
+      let message = `New Audit Request:
 Name: ${name}
 Phone: ${phone}
 Business: ${business}
 Google Maps: ${link}`;
 
-  let url = "https://wa.me/919477469499?text=" + encodeURIComponent(message);
+      let url = "https://wa.me/919477469499?text=" + encodeURIComponent(message);
 
-  window.location.href = url;
+      window.location.href = url;
+    });
+  }
+
 });
 
