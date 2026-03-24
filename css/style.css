@@ -266,8 +266,6 @@ nav a:hover{ color:#6366f1; }
 }
 
 
-<style>
-
 .footer{
 background:linear-gradient(135deg, #f8faff 0%, #eef2ff 100%);
 padding:80px 20px 30px;
@@ -430,13 +428,6 @@ transition:.3s;
 color:#6366f1;
 }
 
-/* BACK TO TOP */
-
-
-/* WHATSAPP */
-
-
-/* MOBILE FIX */
 
 @media(max-width:768px){
 
