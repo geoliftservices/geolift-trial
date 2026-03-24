@@ -152,48 +152,5 @@ window.open(
 
 }
 
-function scrollToTop(){
-window.scrollTo({
-top:0,
-behavior:"smooth"
-});
-}
 
-document.addEventListener("DOMContentLoaded", function() {
 
-  const topBtn = document.querySelector(".top-btn");
-
-  window.addEventListener("scroll", function() {
-    if (window.scrollY > 400) {
-      topBtn.style.opacity = "1";
-      topBtn.style.visibility = "visible";
-      topBtn.style.transform = "translateY(0)";
-    } else {
-      topBtn.style.opacity = "0";
-      topBtn.style.visibility = "hidden";
-      topBtn.style.transform = "translateY(15px)";
-    }
-  });
-
-});
-
-// SHOW BUTTON ON SCROLL
-window.addEventListener("scroll", function(){
-const btn = document.querySelector(".scroll-top");
-
-if(!btn) return;
-
-if(window.scrollY > 300){
-btn.style.display = "flex";
-}else{
-btn.style.display = "none";
-}
-});
-
-// SCROLL FUNCTION
-function scrollToTop(){
-window.scrollTo({
-top:0,
-behavior:"smooth"
-});
-}
