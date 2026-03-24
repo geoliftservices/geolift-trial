@@ -131,26 +131,7 @@ if (counters.length > 0 || yearCounters.length > 0) {
     yearCounters.forEach(c => observer.observe(c));
 }
 
-// Form Submission Action (Prevent Default refresh)
-function sendAudit(event) {
-    event.preventDefault();
-    
-    // Add your form submission logic here
-    alert("Audit requested!");
-}
 
-function sendWhatsApp(){
-
-let n = document.getElementById("name").value;
-let p = document.getElementById("phone").value;
-let m = document.getElementById("msg").value;
-
-window.open(
-"https://wa.me/919477469499?text="
-+ encodeURIComponent("Name: "+n+" Phone: "+p+" Message: "+m)
-);
-
-}
 
 
 function sendAudit(e){
