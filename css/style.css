@@ -444,6 +444,14 @@ gap:35px;
 max-width:100%;
 }
 
+    @media (max-width:768px){
+    .footer-bottom{
+        flex-direction:column;
+        gap:10px;
+        text-align:center;
+    }
+}
+
   .footer-bottom{
     border-top:1px solid rgba(0,0,0,0.08); /* full width thin line */
     margin-top:50px;
