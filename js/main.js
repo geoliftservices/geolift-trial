@@ -134,6 +134,33 @@ if (counters.length > 0 || yearCounters.length > 0) {
 // Form Submission Action (Prevent Default refresh)
 function sendAudit(event) {
     event.preventDefault();
+    
     // Add your form submission logic here
     alert("Audit requested!");
+}
+
+<!-- FLOATING BUTTON -->
+
+<div class="floating-audit-btn" onclick="openAuditForm()">
+Free GBP Audit
+</div>
+
+
+function openAuditForm(){
+
+selectedPlan = "";   // reset plan
+
+document.getElementById("auditPopup").style.display="flex";
+
+}
+
+function closeAuditForm(){
+document.getElementById("auditPopup").style.display="none";
+}
+
+window.onclick=function(event){
+let popup=document.getElementById("auditPopup");
+if(event.target==popup){
+popup.style.display="none";
+}
 }
