@@ -169,7 +169,7 @@ Google Maps: ${link}`;
 
   let url = `https://wa.me/919477469499?text=${encodeURIComponent(message)}`;
 
-  window.location.href = url;
+  window.open(url, "_blank");
 }
 
 
