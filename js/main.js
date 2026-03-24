@@ -1,5 +1,3 @@
-alert("JS Connected");
-
 const menu = document.getElementById("menu");
 const toggle = document.getElementById("toggle");
 const overlay = document.getElementById("overlay");
