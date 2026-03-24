@@ -466,6 +466,13 @@ max-width:100%;
     color:#6b7280;
 }
 
+  .footer-links{
+  display:flex;
+  justify-content:center;
+  gap:25px;
+  flex-wrap:wrap;
+}
+
 .footer-links a{
     margin:0 10px;
     text-decoration:none;
