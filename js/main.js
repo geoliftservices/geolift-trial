@@ -132,9 +132,7 @@ if (counters.length > 0 || yearCounters.length > 0) {
 }
 
 
-
-
-function sendAudit(e){
+document.getElementById("auditForm").addEventListener("submit", function(e){
   e.preventDefault();
 
   let name = document.getElementById("h_name").value;
@@ -148,11 +146,8 @@ Phone: ${phone}
 Business: ${business}
 Google Maps: ${link}`;
 
-  let url = `https://wa.me/919477469499?text=${encodeURIComponent(message)}`;
+  let url = "https://wa.me/919477469499?text=" + encodeURIComponent(message);
 
-  window.open(url, "_blank");
-}
-
-
-
+  window.location.href = url;
+});
 
