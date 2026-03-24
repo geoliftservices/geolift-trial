@@ -152,7 +152,7 @@ window.open(
 
 }
 
- <script>
+
 function sendAudit(e){
   e.preventDefault();
 
@@ -171,7 +171,7 @@ Google Maps: ${link}`;
 
   window.open(url, "_blank");
 }
-</script>
+
 
 
 
