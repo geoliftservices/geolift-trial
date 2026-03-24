@@ -92,3 +92,24 @@ let message = `Name: ${name}%0APhone: ${phone}`;
 
 window.open(`https://wa.me/919477469499?text=${message}`, "_blank");
 }
+
+// AUDIT POPUP
+function openAudit(){
+document.getElementById("auditPopup").style.display="flex";
+}
+
+function closeAudit(){
+document.getElementById("auditPopup").style.display="none";
+}
+
+// AUDIT FORM
+function sendAudit(e){
+e.preventDefault();
+
+let name = document.getElementById("a_name").value;
+let phone = document.getElementById("a_phone").value;
+
+let message = `Name: ${name}%0APhone: ${phone}`;
+
+window.open(`https://wa.me/919477469499?text=${message}`, "_blank");
+}
