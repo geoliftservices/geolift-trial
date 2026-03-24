@@ -139,3 +139,11 @@ function sendAudit(event) {
     alert("Audit requested!");
 }
 
+window.addEventListener('scroll', function() {
+  const scrollBtn = document.getElementById('scrollUpBtn');
+  if (window.scrollY > 300) {
+    scrollBtn.classList.add('show');
+  } else {
+    scrollBtn.classList.remove('show');
+  }
+});
