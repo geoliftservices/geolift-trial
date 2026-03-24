@@ -72,7 +72,7 @@ h2{ margin-bottom:18px; }
 .top-social a:hover{ transform:translateY(-2px); color:#fff; }
 
 /* ===== HEADER ===== */
-header{ position:fixed; top:40px; left:0; width:100%; background:rgba(255,255,255,0.55); transition:all .3s ease; z-index:9999; }
+header{ position:fixed; top:40px; left:0; width:100%; background:rgba(255,255,255,0.95); transition:all .3s ease; z-index:9999; }
 header.scrolled{ background:rgba(255,255,255,0.9); box-shadow:0 8px 30px rgba(0,0,0,0.08); top: 0; }
 .container{ max-width:1200px; margin:auto; display:flex; align-items:center; justify-content:space-between; padding:17px 20px; }
 .logo img{ height:46px; display:block; }
