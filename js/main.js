@@ -139,3 +139,40 @@ function sendAudit(event) {
     alert("Audit requested!");
 }
 
+function sendWhatsApp(){
+
+let n = document.getElementById("name").value;
+let p = document.getElementById("phone").value;
+let m = document.getElementById("msg").value;
+
+window.open(
+"https://wa.me/919477469499?text="
++ encodeURIComponent("Name: "+n+" Phone: "+p+" Message: "+m)
+);
+
+}
+
+function scrollToTop(){
+window.scrollTo({
+top:0,
+behavior:"smooth"
+});
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+
+  const topBtn = document.querySelector(".top-btn");
+
+  window.addEventListener("scroll", function() {
+    if (window.scrollY > 400) {
+      topBtn.style.opacity = "1";
+      topBtn.style.visibility = "visible";
+      topBtn.style.transform = "translateY(0)";
+    } else {
+      topBtn.style.opacity = "0";
+      topBtn.style.visibility = "hidden";
+      topBtn.style.transform = "translateY(15px)";
+    }
+  });
+
+});
