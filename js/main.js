@@ -140,10 +140,17 @@ function sendAudit(event) {
 }
 
 window.addEventListener('scroll', function() {
-  const scrollBtn = document.getElementById('scrollUpBtn');
-  if (window.scrollY > 300) {
-    scrollBtn.classList.add('show');
-  } else {
-    scrollBtn.classList.remove('show');
-  }
+    const scrollUpBtn = document.getElementById('scrollUpBtn');
+    if (window.scrollY > 300) {
+        scrollUpBtn.classList.add('show');
+    } else {
+        scrollUpBtn.classList.remove('show');
+    }
 });
+
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
